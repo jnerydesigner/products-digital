@@ -46,7 +46,7 @@ pipeline {
         //                         node -v
         //                         yarn -v
 
-        //                         cd /var/lib/jenkins/workspace/LandingPageLinks
+        //                         cd /var/lib/jenkins/workspace/ProductsDigital
 
         //                         yarn install
         //                         yarn build
