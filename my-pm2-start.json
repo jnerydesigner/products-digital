@@ -1,0 +1,11 @@
+{
+    "apps": [
+        {
+            "name": "products-digital",
+            "script": "yarn",
+            "args": "start",
+            "autorestart": true,
+            "watch": true
+        }
+    ]
+}
