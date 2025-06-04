@@ -1,53 +1,16 @@
+import { cardsData } from "@/data/cards";
 import Image from "next/image";
 import Link from "next/link";
 
 const CardsSection = () => {
-  const cards = [
-    {
-      id: 1,
-      title: "Quer Ajudar o Canal",
-      description:
-        "Se você quiser ajudar o canal, Saiba que esse Canal é nosso, clique em saiba mais.",
-      img: "/logo-jander-nery-dev-redondo.svg",
-      linkAffiliate: "",
-      linkLearnMore: "/pix",
-    },
-    {
-      id: 2,
-      title: "Conecte-se em nosso Linkedin",
-      description:
-        "Conectando-se poderemos aumentar a comunidade de programação",
-      img: "/linkedin.svg",
-      linkAffiliate: "",
-      linkLearnMore: "/linkedin",
-    },
-    {
-      id: 3,
-      title: "Mentoria",
-      description:
-        "Orientação especializada para seu projeto, posso tentar te ajudar.",
-      img: "/consult.svg",
-      linkAffiliate: "",
-      linkLearnMore: "/consult",
-    },
-    {
-      id: 4,
-      title: "Planos VPS Hostinger",
-      description: "Hospedagem de Sites com mais potência e recursos",
-      img: "/hostinger-logo.svg",
-      linkAffiliate: "",
-      linkLearnMore: "/hostinger-site",
-    },
-  ];
-
   return (
     <>
-      <div className="w-full md:w-full px-[10px] md:mt-30px">
-        <div className="flex flex-wrap justify-center gap-6">
-          {cards.map((card) => (
+      <div className="w-full md:w-full px-[10px]">
+        <div className="flex flex-wrap justify-center gap-6 md:mt-30px md:grid md:grid-cols-4 p-2 md:gap-2">
+          {cardsData.map((card) => (
             <div
               key={card.id}
-              className="w-[300px] p-4 rounded-lg shadow-md hover:shadow-lg transition-all bg-gray-50"
+              className="w-[300px] p-4 rounded-lg shadow-md hover:shadow-lg transition-all bg-gray-50 hover:bg-gray-100"
             >
               <div className="flex items-center space-x-2">
                 <div className="h-11 w-11 rounded-full flex items-center justify-center">

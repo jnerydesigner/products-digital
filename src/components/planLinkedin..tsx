@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { BreadCrumbApp } from "./breadCrumbApp";
-import { Button } from "./ui/button";
+import { ButtonCardSocial } from "./button-card-social";
+import Link from "next/link";
 
 export const PlanLinkedin = () => {
   return (
@@ -64,14 +65,18 @@ export const PlanLinkedin = () => {
               </ul>
             </div>
 
-            <Button
-              className="w-full cursor-pointer h-12 bg-[#0077B5] hover:bg-[#005eb5] text-white font-bold py-3 px-4 rounded-lg transition duration-200 transform hover:scale-101"
+            <ButtonCardSocial
+              className="hover:bg-[#005eb5]"
+              bgColor="bg-[#0077B5]"
               asChild
             >
-              <a href="https://www.linkedin.com/in/jander-nery/" target="blank">
+              <Link
+                href="https://www.linkedin.com/in/jander-nery/"
+                target="_blank"
+              >
                 Linkedin de Jander Nery
-              </a>
-            </Button>
+              </Link>
+            </ButtonCardSocial>
           </div>
         </div>
       </section>

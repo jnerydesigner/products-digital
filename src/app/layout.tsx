@@ -23,7 +23,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Header />
-        <main className="w-full top-[180px] mx-auto h-auto md:w-[900px] flex justify-center items-center p-2 py-4 flex-grow shadow rounded-2xl mt-50">
+        <main className="w-full top-[180px] mx-auto h-auto md:w-8/12 flex justify-center items-center p-2 py-4 flex-grow shadow rounded-2xl mt-50">
           {children}
         </main>
       </body>
