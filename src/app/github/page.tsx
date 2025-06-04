@@ -3,31 +3,31 @@ import { PlanGithub } from "@/components/planGithub";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Otimização de Perfil no LinkedIn | Impulsione Sua Carreira Dev",
+  title: "Projetos no GitHub | Portfólio de Jander Nery",
   description:
-    "Aprenda a destacar seu perfil no LinkedIn, gerar oportunidades e conquistar vagas na área de tecnologia. Dicas práticas para devs e profissionais de TI.",
+    "Explore os projetos de Jander Nery no GitHub. Soluções backend com Node.js, NestJS, TypeScript e arquiteturas escaláveis voltadas ao mercado de tecnologia.",
   keywords: [
-    "linkedin para desenvolvedores",
-    "otimizar perfil linkedin",
-    "perfil profissional tech",
-    "carreira em tecnologia",
-    "linkedin dev",
-    "como melhorar o linkedin",
-    "branding pessoal para programadores",
-    "linkedin programador",
+    "projetos github dev",
+    "portfólio backend github",
+    "nodejs github",
+    "nestjs github",
+    "typescript projetos",
+    "arquitetura de microsserviços",
+    "github jander nery",
+    "backend escalável open source",
   ],
   openGraph: {
-    title: "Otimização de Perfil no LinkedIn",
+    title: "Projetos no GitHub | Jander Nery Dev",
     description:
-      "Aumente sua visibilidade no LinkedIn com dicas de posicionamento, networking e autoridade na comunidade dev.",
-    url: `${process.env.NEXT_PUBLIC_PAGE_URL}/linkedin`,
+      "Veja projetos com NestJS, TypeScript, Docker e arquiteturas modernas. Código limpo, escalabilidade e boas práticas em destaque.",
+    url: `${process.env.NEXT_PUBLIC_PAGE_URL}/github`,
     siteName: "Jander Nery Dev",
     images: [
       {
         url: `${process.env.NEXT_PUBLIC_PAGE_URL}/logo-jander-nery-dev-redondo.svg`,
         width: 1200,
         height: 630,
-        alt: "LinkedIn para desenvolvedores",
+        alt: "Portfólio de projetos no GitHub",
       },
     ],
     locale: "pt_BR",
@@ -35,9 +35,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Otimização de Perfil no LinkedIn | Devs em Destaque",
+    title: "Veja os Projetos de Jander Nery no GitHub",
     description:
-      "Melhore sua presença no LinkedIn e gere mais oportunidades na área de tecnologia.",
+      "Conheça soluções em Node.js, NestJS e TypeScript aplicadas no mercado. Portfólio real para desenvolvedores e empresas.",
     images: [
       `${process.env.NEXT_PUBLIC_PAGE_URL}/logo-jander-nery-dev-redondo.svg`,
     ],
@@ -47,11 +47,11 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: `${process.env.NEXT_PUBLIC_PAGE_URL}/linkedin`,
+    canonical: `${process.env.NEXT_PUBLIC_PAGE_URL}/github`,
   },
 };
 
-export default function Linkedin() {
+export default function Github() {
   return (
     <>
       <div className="md:max-w-5xl md:mx-auto p-6 flex justify-center items-center md:flex-row">
