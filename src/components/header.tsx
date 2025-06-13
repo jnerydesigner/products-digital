@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const Header = () => {
   return (
-    <header className="w-[400px] md:w-full flex flex-col justify-center items-center bg-gray-50 shadow-md absolute top-0">
+    <header className="w-full md:w-full flex flex-col justify-center items-center bg-gray-50 shadow-md absolute top-0">
       <div className="h-[100px] w-[100px] relative">
         <Link href="/">
           <Image

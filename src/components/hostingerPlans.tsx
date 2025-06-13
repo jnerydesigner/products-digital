@@ -19,33 +19,26 @@ export type Plan = {
 
 export const HostingerPlans = () => {
   const transformAndCalculateAnnualPlan = (value: string) => {
-    // Handle invalid inputs
     if (!value || typeof value !== "string" || value.trim() === "") {
       console.warn("Invalid or empty input:", value);
       return "0";
     }
 
-    // Remove all non-numeric characters except dot and comma
     const cleanValue = value.replace(/[^\d,.]/g, "");
-    console.log("Clean value:", cleanValue); // Log for debugging
+    console.log("Clean value:", cleanValue);
 
-    // Remove thousands separators (dots) and replace comma with dot for decimal
     const formattedValue = cleanValue.replace(/\./g, "").replace(",", ".");
     console.log("Formatted value:", formattedValue); // Log for debugging
 
-    // Convert to float
     const valorFloat = parseFloat(formattedValue);
 
-    // Check if the result is a valid number
     if (isNaN(valorFloat)) {
       console.warn("Cannot parse value:", value, "Formatted:", formattedValue);
       return "0";
     }
 
-    // Divide by 24
     const resultado = valorFloat / 24;
 
-    // Format result to string with 2 decimal places
     const resultadoString = resultado.toFixed(2);
 
     return resultadoString;
