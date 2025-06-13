@@ -6,11 +6,11 @@ const CardsSection = () => {
   return (
     <>
       <div className="w-full md:w-full px-[10px]">
-        <div className="flex flex-wrap justify-center gap-6 md:mt-30px md:grid md:grid-cols-4 p-2 md:gap-2">
+        <div className="flex flex-wrap justify-center gap-6 md:mt-30px md:flex md:flex-row md:justify-center md:items-center p-2 md:gap-4">
           {cardsData.map((card) => (
             <div
               key={card.id}
-              className="w-[300px] p-4 rounded-lg shadow-md hover:shadow-lg transition-all bg-gray-50 hover:bg-gray-100"
+              className="w-90 h-40 p-4 rounded-lg shadow-md hover:shadow-lg transition-all bg-gray-50 hover:bg-gray-100"
             >
               <div className="flex items-center space-x-2">
                 <div className="h-11 w-11 rounded-full flex items-center justify-center">

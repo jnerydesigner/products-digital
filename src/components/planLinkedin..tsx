@@ -5,9 +5,9 @@ import Link from "next/link";
 
 export const PlanLinkedin = () => {
   return (
-    <div className="md:max-w-6xl p-4 gap-4 h-[1100px] md:h-auto md:flex md:justify-center md:items-center md:flex-col md:rounded-[8px]">
+    <div className="md:w-full p-4 gap-4 h-[1100px] md:h-auto md:flex md:justify-center md:items-center md:flex-col md:rounded-[8px]">
       <BreadCrumbApp name="Linkedin" page="/linkedin" />
-      <section className="grid grid-cols-1 md:grid-cols-2 md:gap-2 max-h-[80vh] my-auto gap-4 mb-[50px] md:mb-4 md:mt-2.5 md:w-full">
+      <section className="grid grid-cols-1 md:grid-cols-1 md:gap-2 max-h-[80vh] my-auto gap-4 mb-[50px] md:mb-4 md:mt-2.5 md:w-full">
         <a
           href="https://www.linkedin.com/in/jander-nery/"
           target="blank"
