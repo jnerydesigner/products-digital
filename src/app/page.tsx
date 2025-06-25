@@ -1,4 +1,5 @@
 import CardsSection from "@/components/card-section";
+import SocialMedias from "@/components/socialMedias";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -54,5 +55,10 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  return <CardsSection />;
+  return (
+    <div className="flex justify-center items-center flex-col">
+      <SocialMedias />
+      <CardsSection />
+    </div>
+  );
 }
