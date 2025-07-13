@@ -1,3 +1,4 @@
+import { CardProductAmazon } from "@/components/card-product-amazon";
 import CardsSection from "@/components/card-section";
 import SocialMedias from "@/components/socialMedias";
 import { Metadata } from "next";
@@ -58,6 +59,7 @@ export default function Home() {
   return (
     <div className="flex justify-center items-center flex-col">
       <SocialMedias />
+      <CardProductAmazon />
       <CardsSection />
     </div>
   );
