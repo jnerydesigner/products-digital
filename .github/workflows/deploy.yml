@@ -39,15 +39,15 @@ jobs:
             echo "Executando git pull"
             git pull origin main
 
-      # - name: Instalar as dependencias
-      #   uses: appleboy/ssh-action@v0.1.7
-      #   with:
-      #     host: ${{ secrets.HOST }}
-      #     username: ${{ secrets.USERNAME }}
-      #     key: ${{ secrets.SSH_PRIVATE_KEY }}
-      #     script: |
-      #       cd /root/projects/seligadev
-      #       yarn install
+      - name: Instalando as dependencias
+        uses: appleboy/ssh-action@v0.1.7
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd /root/projects/seligadev
+            yarn install
 
       # - name: Executar o Build No Servidor
       #   uses: appleboy/ssh-action@v0.1.7
