@@ -16,13 +16,13 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            mkdir -p /projects/products-digital
+            mkdir -p /projects
             echo "PWD inicial:"
             pwd
             echo "Conteúdo de /projects:"
             ls -la /root/projects
 
-            if [ ! -d "/root/projects/seligadev/.git" ]; then
+            if [ ! -d "/root/projects/products-digital/.git" ]; then
                 echo "Clonando repositório..."
                 git clone https://github.com/jnerydesigner/products-digital /root/projects/products-digital
             else
